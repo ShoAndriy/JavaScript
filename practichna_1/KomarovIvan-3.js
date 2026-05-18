@@ -1,0 +1,15 @@
+let dollar_to_hrivnya = 43.7;
+let balance = 210000;
+let amount_1 = 60000;
+let amount_2 = 2600 * (dollar_to_hrivnya + 1);
+let amount_3 = 1700 * (dollar_to_hrivnya + 2);
+let fixed_expenses = (3500 + 4000) * 3;
+let netflix = (9.99 * dollar_to_hrivnya) + (9.99 * (dollar_to_hrivnya + 1)) + (9.99 * (dollar_to_hrivnya + 2));
+let vitraty = fixed_expenses + netflix;
+let suma = amount_1 + amount_2 + amount_3;
+let podatok = 4500 + (suma * 0.05);
+balance = balance + suma - vitraty - podatok;
+console.log(`В цьому кварталі Максим витратив ${vitraty} грн`);
+console.log(`Загальний дохід Максима за квартал становить ${suma} грн`);
+console.log(`Загальна сума податків становить ${podatok} грн`);
+console.log(`Отже, наприкінці кварталу залишок на рахунку Максима становить ${balance} грн`);

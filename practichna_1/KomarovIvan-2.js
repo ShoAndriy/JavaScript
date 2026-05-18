@@ -1,0 +1,10 @@
+let dollar_to_hrivnya = 43.7;
+let amount_1 = 68000;
+let amount_2 = 2600 * dollar_to_hrivnya;
+let amount_3 = 1900 * dollar_to_hrivnya;
+let single_tax_rate = 0.05;
+let esv = 4500;
+let suma = amount_1 + amount_2 + amount_3;
+let podatok = (suma * single_tax_rate) + esv;
+console.log(`Загальна сума доходу Максима складає ${suma} грн.`);
+console.log(`В кінці кварталу Максиму необхідно сплатити ${podatok} грн.`);
